@@ -22,7 +22,7 @@ export default function Navigation() {
       <div id="menupunkter">
         <a onClick={() => scrollToSection("omMig")}>om mig</a>
         <a onClick={() => scrollToSection("projekter")}>projekter</a>
-        <a onClick={() => scrollToSection("")}>kontakt</a>
+        <a onClick={() => scrollToSection("kontakt")}>kontakt</a>
       </div>
     </nav>
   );

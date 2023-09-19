@@ -2,6 +2,12 @@ import baggrund from "../images/baggrund.svg";
 import forsidegif from "../images/kodeskysimpel.gif";
 
 export default function Forside() {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section id="forside">
       <div id="velkommen">
@@ -9,10 +15,8 @@ export default function Forside() {
         <h2>Rikke Kodahls</h2>
         <h2>portfolio</h2>
       </div>
-      <a href="">
-        <button id="kontaktKnap" className="knap">
-          kontakt mig
-        </button>
+      <a onClick={() => scrollToSection("kontakt")}>
+        <button id="kontaktKnap">kontakt mig</button>
       </a>
 
       <img

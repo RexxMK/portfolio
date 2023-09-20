@@ -1,5 +1,5 @@
 import baggrund from "../images/baggrund.svg";
-import forsidegif from "../images/kodeskysimpel.gif";
+import forsidegif from "../images/forsideani.gif";
 
 export default function Forside() {
   const scrollToSection = (sectionId) => {

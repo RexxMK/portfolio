@@ -131,12 +131,12 @@ body::-webkit-scrollbar {
   }
 
   #forsidegif {
-    width: 45%;
+    width: 85%;
     position: absolute;
     top: 0;
-    right: 0;
-    margin-right: 5.5vw;
-    margin-top: 4.9vw;
+    left: 0;
+    margin-left: 32vw;
+    margin-top: 4.7vw;
   }
 
   /*OM MIG*/
@@ -427,12 +427,12 @@ body::-webkit-scrollbar {
   }
 
   #forsidegif {
-    width: 45%;
+    width: 85%;
     position: absolute;
     top: 0;
-    right: 0;
-    margin-right: 5.5vw;
-    margin-top: 8.9vw;
+    left: 0;
+    margin-left: 32.1vw;
+    margin-top: 8.5vw;
   }
 
   /*OM MIG*/
@@ -724,12 +724,12 @@ body::-webkit-scrollbar {
   }
 
   #forsidegif {
-    width: 100%;
+    width: 190%;
     position: absolute;
     top: 0;
-    right: 0;
-
-    margin-top: 75vw;
+    left: 0;
+    margin-left: -39.2vw;
+    margin-top: 73vw;
   }
 
   /*OM MIG*/

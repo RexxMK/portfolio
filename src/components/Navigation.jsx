@@ -19,6 +19,7 @@ export default function Navigation() {
           <img src={logo} alt="Mit logo" />
         </a>
       </div>
+      <h2>Rikke Kodahl</h2>
       <div id="menupunkter">
         <a onClick={() => scrollToSection("omMig")}>om mig</a>
         <a onClick={() => scrollToSection("projekter")}>projekter</a>

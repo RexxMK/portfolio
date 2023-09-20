@@ -81,6 +81,12 @@ body::-webkit-scrollbar {
     display: none;
   }
 
+  nav h2 {
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: 2vw;
+  }
+
   #menupunkter {
     width: 40%;
     display: flex;
@@ -369,6 +375,12 @@ body::-webkit-scrollbar {
 
   #logoMobil {
     display: none;
+  }
+
+  nav h2 {
+    position: absolute;
+    margin-left: 14vw;
+    margin-top: 3vw;
   }
 
   #menupunkter {
@@ -661,6 +673,10 @@ body::-webkit-scrollbar {
 
   #logo img {
     width: 20%;
+  }
+
+  nav h2 {
+    display: none;
   }
 
   #menupunkter {

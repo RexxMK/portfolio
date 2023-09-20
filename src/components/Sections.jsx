@@ -1,5 +1,8 @@
 import migimg from "../images/ommig.svg";
-import kontaktimg from "../images/kontaktmig.svg";
+import kontaktimg from "../images/kontaktmig_3.svg";
+import streg from "../images/streg.svg";
+import citatleft from "../images/citatleft.svg";
+import citatright from "../images/citatright.svg";
 import illustrator from "../images/illustrator.png";
 import html from "../images/html-5.png";
 import css from "../images/css-3.png";
@@ -18,8 +21,12 @@ import { useEffect } from "react";
 import OmMig from "./OmMig";
 import pil from "../images/arrow-down.svg";
 import { Link } from "react-router-dom";
+import email from "../images/email.svg";
+import linkedin from "../images/linkedin.svg";
+import facebook from "../images/facebook.svg";
 
 export default function Posts() {
+  //Her henter jeg et indlæg fra WordPress
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -35,6 +42,7 @@ export default function Posts() {
   }, []);
 
   return (
+    //OM MIG
     <section id="omMig">
       <div className="toKolonner">
         <div id="omMigImg">
@@ -51,12 +59,44 @@ export default function Posts() {
         </div>
       </div>
 
-      <div id="udtalelse">
+      {/*UDTALELSE */}
+      <div>
         <div className="tekstIMidten">
           <h2>udtalelse fra medstuderende</h2>
         </div>
+        <div id="udtalelse">
+          {" "}
+          <img id="stregLeft" src={streg} alt="Streg" />
+          <div>
+            <img className="citatLeft" src={citatleft} alt="Citationstegn" />
+            <p>
+              Jeg har arbejdet sammen med Rikke adskillige gange på 1 og 2
+              semester af Multimediedesigner-uddannelsen og hun er en fornøjelse
+              at arbejde sammen med. Rikke er imødekommende, sjov og venlig.
+              Udover at være en haj til frontend bidrager hun også med sin
+              kreativitet og unikke, skarpe idéer. Rikke er en ægte teamplayer,
+              der også formår at arbejde selvstændigt og fordybet. Rikke er
+              grundig i sit arbejde og er en person man kan regne med. Og hun er
+              en gevinst for enhver, der har hende på sit team. - Og så er hun
+              utrolig sjov og energisk at være i selskab med.
+            </p>
+            <br />
+            <p>
+              - Katrine Brun Lunding{" "}
+              <span>
+                <img
+                  className="citatRight"
+                  src={citatright}
+                  alt="Citationstegn"
+                />
+              </span>
+            </p>
+          </div>
+          <img id="stregRight" src={streg} alt="Streg" />
+        </div>
       </div>
 
+      {/*VÆRKTØJER*/}
       <div>
         <div className="tekstIMidten">
           <h2>værktøjer</h2>
@@ -118,9 +158,11 @@ export default function Posts() {
         </div>
       </div>
 
+      {/*PROJEKTER*/}
       <section id="projekter">
         <h1>projekter</h1>
 
+        {/*KRISTIAN F. MØLLER*/}
         <div id="kfm">
           <div className="projektBeskrivelse">
             <h2>kristian f. møller</h2>
@@ -142,11 +184,13 @@ export default function Posts() {
           </div>
 
           <div className="mockup">
-            <img
-              className="mockupLap"
-              src={kfmlap}
-              alt="Mockup af mit eksamensprojekt fra 2. semester - Laptop"
-            />
+            <Link to="https://xd.adobe.com/view/2afcd91f-e249-4340-ac49-b7ba253c1748-7faf/?fullscreen&hints=off">
+              <img
+                className="mockupLap"
+                src={kfmlap}
+                alt="Mockup af mit eksamensprojekt fra 2. semester - Laptop"
+              />
+            </Link>
             <img
               className="mockupMob"
               src={kfmmob}
@@ -155,6 +199,7 @@ export default function Posts() {
           </div>
         </div>
 
+        {/*NIPPON*/}
         <div id="nippon">
           <div className="projektBeskrivelse">
             <h2>nippon</h2>
@@ -175,11 +220,13 @@ export default function Posts() {
             </Link>
           </div>
           <div className="mockup">
-            <img
-              className="mockupLap"
-              src={nipponlap}
-              alt="Mockup af mit måltidskasseprojekt - Laptop"
-            />
+            <Link to="https://xd.adobe.com/view/78cf6335-36f6-44ec-8efd-520d28ebc2fc-2d9c/?fullscreen&hints=off">
+              <img
+                className="mockupLap"
+                src={nipponlap}
+                alt="Mockup af mit måltidskasseprojekt - Laptop"
+              />
+            </Link>
             <img
               className="mockupMob"
               src={nipponmob}
@@ -188,6 +235,7 @@ export default function Posts() {
           </div>
         </div>
 
+        {/*URTEKRAM*/}
         <div id="urtekram">
           <div className="projektBeskrivelse">
             <h2>urtekram</h2>
@@ -208,20 +256,25 @@ export default function Posts() {
             </Link>
           </div>
           <div className="mockup">
-            <img
-              className="mockupLap"
-              src={urtekramlap}
-              alt="Mockup af mit eksamensprojekt fra 1. semester - Laptop"
-            />
-            <img
-              className="mockupMob"
-              src={urtekrammob}
-              alt="Mockup af mit eksamensprojekt fra 1. semester - Mobil"
-            />
+            <Link to="https://xd.adobe.com/view/04aedd00-c51e-4707-90f8-818264be9ce9-51fd/?fullscreen&hints=off">
+              <img
+                className="mockupLap"
+                src={urtekramlap}
+                alt="Mockup af mit eksamensprojekt fra 1. semester - Laptop"
+              />
+            </Link>
+            <Link to="https://xd.adobe.com/view/5f81e4c6-35c0-442a-801a-3626d0a03f8f-0ad2/?fullscreen&hints=off">
+              <img
+                className="mockupMob"
+                src={urtekrammob}
+                alt="Mockup af mit eksamensprojekt fra 1. semester - Mobil"
+              />
+            </Link>
           </div>
         </div>
       </section>
 
+      {/*KONTAKT*/}
       <section id="kontakt">
         <div className="toKolonner">
           <div id="kontaktImg">
@@ -230,8 +283,26 @@ export default function Posts() {
 
           <div id="kontaktTekst">
             <h1>kontakt</h1>
-            <div>
-              <p></p>
+            <div id="kontaktInfo">
+              <p>
+                Hvis jeg virker som et godt match til jeres praktikantstilling,
+                så kontakt mig endelig på følgende steder, så kan vi måske finde
+                ud af noget.
+              </p>
+              <a href="mailto:rikkekodahl.dk">
+                <img src={email} alt="Email ikon" />
+                <p>rikkekodahl@live.dk</p>
+              </a>
+
+              <a href="https://www.linkedin.com/in/rikke-kodahl-84653524a/">
+                <img src={linkedin} alt="LinkedIn ikon" />
+                <p>Besøg mig på LinkedIn</p>
+              </a>
+
+              <a href="https://www.facebook.com/rikke.kodahl">
+                <img src={facebook} alt="Facebook ikon" />
+                <p>Find mig på facebook</p>
+              </a>
             </div>
           </div>
         </div>

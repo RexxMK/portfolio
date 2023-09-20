@@ -84,9 +84,9 @@ nav {
 /*FORSIDE*/
 #forside {
   background-image: url("images/baggrund.svg");
-  background-size: cover;
+  background-size: 100vw;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100vw;
 
   position: sticky;
   top: 0;
@@ -128,7 +128,7 @@ nav {
 /*OM MIG*/
 #omMig {
   position: relative;
-  height: 500vh;
+  height: 510vh;
   z-index: 1;
   background-color: #f4fdc1;
 }
@@ -150,14 +150,36 @@ nav {
 }
 
 /*UDTALELSE*/
-#udtalelse {
-  margin-top: 10vw;
-}
 
 .tekstIMidten {
   display: flex;
   justify-content: center;
+  padding-bottom: 2vw;
+  padding-top: 10vw;
+}
+
+#udtalelse {
+  display: flex;
+}
+
+#stregLeft,
+#stregRight {
+  width: 10%;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.citatLeft,
+.citatRight {
+  width: 5%;
+}
+
+.citatLeft {
   padding-bottom: 1.5vw;
+}
+
+.citatRight {
+  margin-left: 56.2vw;
 }
 
 /*TOOLS*/
@@ -241,15 +263,32 @@ h3 {
 }
 /*KONTAKT*/
 #kontakt {
-  margin-top: 2vw;
-}
-
-#kontaktImg {
-  width: 25%;
-  margin-left: 14.6vw;
-  padding-top: 8vw;
+  margin-top: 8vw;
+  margin-left: 4vw;
 }
 
 #kontaktTekst {
-  padding-left: 14.8vw;
+  width: 35%;
+  padding-left: 11vw;
+}
+
+#kontaktInfo {
+  padding-left: 0.5vw;
+}
+
+#kontaktInfo img {
+  width: 7%;
+  padding-right: 2vw;
+}
+
+#kontaktInfo a {
+  display: flex;
+  align-items: center;
+  padding-top: 3vw;
+}
+
+#kontaktImg {
+  width: 30%;
+  margin-left: 10.5vw;
+  padding-top: 8vw;
 }

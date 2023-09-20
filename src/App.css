@@ -396,7 +396,7 @@ body::-webkit-scrollbar {
     background-image: url("images/baggrund.svg");
     background-size: 100vw;
     background-repeat: no-repeat;
-    height: 100vw;
+    height: 40vw;
     overflow: hidden;
 
     position: sticky;

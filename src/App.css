@@ -6,6 +6,7 @@
 
 body {
   background-color: #f4fdc1;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -398,9 +399,6 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
     height: 56vw;
     overflow: hidden;
-
-    top: 0;
-    left: 0;
   }
 
   #velkommen {
@@ -437,7 +435,6 @@ body::-webkit-scrollbar {
 
   /*OM MIG*/
   #omMig {
-    position: relative;
     height: 100vw;
     z-index: 1;
     background-color: #f4fdc1;

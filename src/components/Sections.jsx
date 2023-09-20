@@ -1,5 +1,5 @@
-import migimg from "../images/ommig.svg";
-import kontaktimg from "../images/kontaktmig_3.svg";
+import migimg from "../images/om.svg";
+import kontaktimg from "../images/smil_2.svg";
 import streg from "../images/streg.svg";
 import citatleft from "../images/citatleft.svg";
 import citatright from "../images/citatright.svg";

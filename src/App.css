@@ -13,7 +13,7 @@ body::-webkit-scrollbar {
 }
 
 /* Store skærme (desktops) */
-@media (min-width: 1024px) {
+@media (min-width: 1201px) {
   /* ... */
 
   /*FONT REGLER*/
@@ -310,7 +310,7 @@ body::-webkit-scrollbar {
 }
 
 /* Mellemstore skærme (tablets) */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   /* ... */
   /*FONT REGLER*/
   h1,
@@ -397,6 +397,7 @@ body::-webkit-scrollbar {
     background-size: 100vw;
     background-repeat: no-repeat;
     height: 56vw;
+    overflow: hidden;
 
     position: sticky;
     top: 0;
@@ -653,7 +654,7 @@ body::-webkit-scrollbar {
     display: flex;
     background-color: rgb(244, 253, 193, 0.7);
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 15vw;
     z-index: 5;
   }
@@ -688,12 +689,17 @@ body::-webkit-scrollbar {
     margin-left: 5vw;
   }
 
+  #menupunkter a {
+    font-size: 4vw;
+  }
+
   /*FORSIDE*/
   #forside {
     background-image: url("images/baggrundMobil.svg");
-    background-size: 170vw;
+    background-size: 100vw;
     background-repeat: no-repeat;
     height: 180vw;
+    overflow: hidden;
 
     position: sticky;
     top: 0;

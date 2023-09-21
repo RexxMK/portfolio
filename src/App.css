@@ -13,37 +13,170 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
+/*FONT REGLER*/
+h1,
+h2,
+h3,
+a,
+p {
+  color: #676417;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  text-transform: uppercase;
+  padding-bottom: 3vw;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+  padding-top: 0.9vw;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*NAVIGATION*/
+nav {
+  display: flex;
+  background-color: rgb(244, 253, 193, 0.7);
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+#logo {
+  width: 60%;
+  margin-left: 2vw;
+  margin-top: 1vw;
+}
+
+#logoMobil {
+  display: none;
+}
+
+nav h2 {
+  position: absolute;
+}
+
+#menupunkter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*FORSIDE*/
+#forside {
+  background-image: url("images/baggrund.svg");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
+#kontaktKnap {
+  text-transform: uppercase;
+  color: #f4fdc1;
+  background-color: #676417;
+  border: none;
+  border-radius: 20px;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+#forsidegif {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*OM MIG*/
+#omMig {
+  height: 100vw;
+  z-index: 1;
+  background-color: #f4fdc1;
+}
+
+/*UDTALELSE*/
+.tekstIMidten {
+  display: flex;
+  justify-content: center;
+}
+
+.fedTekst {
+  font-weight: 900;
+}
+
+.citatLeft {
+  padding-bottom: 1.5vw;
+}
+
+/*TOOLS*/
+.tools,
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+/*PROJEKTER*/
+
+#kfm,
+#nippon {
+  display: flex;
+  padding-bottom: 11.6vw;
+}
+
+#urtekram {
+  display: flex;
+}
+
+.projektBeskrivelse h2 {
+  padding-bottom: 2vw;
+}
+
+.pil {
+  color: #676417;
+}
+
+.seMereKnap {
+  text-transform: uppercase;
+  color: #f4fdc1;
+  background-color: #676417;
+  border: none;
+  border-radius: 20px;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+/*KONTAKT*/
+
+#kontaktInfo a {
+  display: flex;
+  align-items: center;
+}
+
 /* Store skærme (desktops) */
 @media (min-width: 1201px) {
-  /* ... */
-
   /*FONT REGLER*/
-  h1,
-  h2,
-  h3,
-  a,
-  p {
-    color: #676417;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 100;
-  }
-
   h1 {
-    text-transform: uppercase;
     font-size: 6vw;
-    padding-bottom: 3vw;
     padding-top: 7.1vw;
   }
 
   h2 {
-    text-transform: uppercase;
     font-size: 1.2vw;
   }
 
   h3 {
-    text-transform: uppercase;
     font-size: 1vw;
-    padding-top: 0.9vw;
   }
 
   p {
@@ -52,26 +185,12 @@ body::-webkit-scrollbar {
   }
 
   a {
-    text-transform: uppercase;
     font-size: 1.2vw;
-    text-decoration: none;
-    cursor: pointer;
   }
 
   /*NAVIGATION*/
   nav {
-    display: flex;
-    background-color: rgb(244, 253, 193, 0.7);
-    position: fixed;
-    width: 100%;
     height: 5.5vw;
-    z-index: 5;
-  }
-
-  #logo {
-    width: 60%;
-    margin-left: 2vw;
-    margin-top: 1vw;
   }
 
   #logo img {
@@ -83,26 +202,19 @@ body::-webkit-scrollbar {
   }
 
   nav h2 {
-    position: absolute;
     margin-left: 10vw;
     margin-top: 2.1vw;
   }
 
   #menupunkter {
     width: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-right: 10vw;
   }
 
   /*FORSIDE*/
   #forside {
     background-image: url("images/baggrund.svg");
-    background-size: 100vw;
-    background-repeat: no-repeat;
     height: 100vw;
-
     position: sticky;
     top: 0;
     left: 0;
@@ -119,23 +231,12 @@ body::-webkit-scrollbar {
 
   #kontaktKnap {
     margin-left: 14vw;
-    text-transform: uppercase;
-    color: #f4fdc1;
-    background-color: #999750;
-    border: none;
-    border-radius: 20px;
     font-size: 1.2vw;
-    font-weight: 100;
     padding: 0.8%;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
   }
 
   #forsidegif {
     width: 85%;
-    position: absolute;
-    top: 0;
-    left: 0;
     margin-left: 32vw;
     margin-top: 4.7vw;
   }
@@ -143,9 +244,6 @@ body::-webkit-scrollbar {
   /*OM MIG*/
   #omMig {
     position: relative;
-    height: 100vw;
-    z-index: 1;
-    background-color: #f4fdc1;
   }
 
   .toKolonner {
@@ -167,8 +265,6 @@ body::-webkit-scrollbar {
   /*UDTALELSE*/
 
   .tekstIMidten {
-    display: flex;
-    justify-content: center;
     padding-bottom: 2vw;
     padding-top: 10vw;
   }
@@ -184,7 +280,6 @@ body::-webkit-scrollbar {
   }
 
   .fedTekst {
-    font-weight: 900;
     padding-top: 2vw;
   }
 
@@ -229,15 +324,9 @@ body::-webkit-scrollbar {
   }
 
   #kfm,
-  #nippon {
-    width: 100%;
-    display: flex;
-    padding-bottom: 11.6vw;
-  }
-
+  #nippon,
   #urtekram {
     width: 100%;
-    display: flex;
   }
 
   .projektBeskrivelse {
@@ -255,23 +344,14 @@ body::-webkit-scrollbar {
   .pil {
     width: 2.5%;
     padding-left: 0.5vw;
-    color: #676417;
   }
 
   .seMereKnap {
     width: 10.4vw;
-    text-transform: uppercase;
-    color: #f4fdc1;
-    background-color: #999750;
-    border: none;
-    border-radius: 20px;
     font-size: 1.2vw;
-    font-weight: 100;
     padding-top: 0.8vw;
     padding-bottom: 0.8vw;
     margin-top: 1vw;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
   }
 
   .mockup {
@@ -290,7 +370,6 @@ body::-webkit-scrollbar {
   /*KONTAKT*/
   #kontakt {
     margin-top: 8vw;
-
     padding-bottom: 10vw;
   }
 
@@ -309,8 +388,6 @@ body::-webkit-scrollbar {
   }
 
   #kontaktInfo a {
-    display: flex;
-    align-items: center;
     padding-top: 3vw;
   }
 
@@ -323,34 +400,19 @@ body::-webkit-scrollbar {
 
 /* Mellemstore skærme (tablets) */
 @media (min-width: 768px) and (max-width: 1200px) {
-  /* ... */
   /*FONT REGLER*/
-  h1,
-  h2,
-  h3,
-  a,
-  p {
-    color: #676417;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 100;
-  }
 
   h1 {
-    text-transform: uppercase;
     font-size: 7vw;
-    padding-bottom: 3vw;
     padding-top: 7.7vw;
   }
 
   h2 {
-    text-transform: uppercase;
     font-size: 1.8vw;
   }
 
   h3 {
-    text-transform: uppercase;
     font-size: 1.4vw;
-    padding-top: 0.9vw;
   }
 
   p {
@@ -359,57 +421,31 @@ body::-webkit-scrollbar {
   }
 
   a {
-    text-transform: uppercase;
     font-size: 1.8vw;
-    text-decoration: none;
-    cursor: pointer;
   }
 
   /*NAVIGATION*/
   nav {
-    display: flex;
-    background-color: rgb(244, 253, 193, 0.7);
-    position: fixed;
-    width: 100%;
     height: 8vw;
-    z-index: 5;
-  }
-
-  #logo {
-    width: 60%;
-    margin-left: 2vw;
-    margin-top: 1vw;
   }
 
   #logo img {
     width: 20%;
   }
 
-  #logoMobil {
-    display: none;
-  }
-
   nav h2 {
-    position: absolute;
     margin-left: 14vw;
     margin-top: 3vw;
   }
 
   #menupunkter {
     width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-right: 5vw;
   }
 
   /*FORSIDE*/
   #forside {
-    background-image: url("images/baggrund.svg");
-    background-size: 100vw;
-    background-repeat: no-repeat;
     height: 56vw;
-    overflow: hidden;
   }
 
   #velkommen {
@@ -423,37 +459,19 @@ body::-webkit-scrollbar {
 
   #kontaktKnap {
     margin-left: 14vw;
-    text-transform: uppercase;
-    color: #f4fdc1;
-    background-color: #999750;
-    border: none;
-    border-radius: 20px;
     font-size: 1.8vw;
-    font-weight: 100;
     padding: 0.8%;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
   }
 
   #forsidegif {
     width: 85%;
-    position: absolute;
-    top: 0;
-    left: 0;
     margin-left: 32.1vw;
     margin-top: 8.5vw;
   }
 
   /*OM MIG*/
   #omMig {
-    height: 100vw;
-    z-index: 1;
-    background-color: #f4fdc1;
     padding-top: 5vw;
-  }
-
-  .toKolonner {
-    display: flex;
   }
 
   #omMigImg {
@@ -467,11 +485,13 @@ body::-webkit-scrollbar {
     padding-left: 7.5vw;
   }
 
+  .toKolonner {
+    display: flex;
+  }
+
   /*UDTALELSE*/
 
   .tekstIMidten {
-    display: flex;
-    justify-content: center;
     padding-bottom: 2vw;
     padding-top: 10vw;
   }
@@ -487,7 +507,6 @@ body::-webkit-scrollbar {
   }
 
   .fedTekst {
-    font-weight: 900;
     padding-top: 3vw;
   }
 
@@ -503,21 +522,11 @@ body::-webkit-scrollbar {
     width: 5%;
   }
 
-  .citatLeft {
-    padding-bottom: 1.5vw;
-  }
-
   .citatRight {
     margin-left: 73.5vw;
   }
 
   /*TOOLS*/
-  .tools,
-  h3 {
-    display: flex;
-    justify-content: center;
-  }
-
   .tools img {
     width: 10vw;
     padding-left: 3vw;
@@ -535,21 +544,14 @@ body::-webkit-scrollbar {
   #kfm,
   #nippon {
     width: 100%;
-    display: flex;
-    padding-bottom: 11.6vw;
   }
 
   #urtekram {
     width: 100%;
-    display: flex;
   }
 
   .projektBeskrivelse {
     width: 38%;
-  }
-
-  .projektBeskrivelse h2 {
-    padding-bottom: 2vw;
   }
 
   .projektBeskrivelse p {
@@ -559,23 +561,14 @@ body::-webkit-scrollbar {
   .pil {
     width: 3.5%;
     padding-left: 0.8vw;
-    color: #676417;
   }
 
   .seMereKnap {
     width: 15vw;
-    text-transform: uppercase;
-    color: #f4fdc1;
-    background-color: #999750;
-    border: none;
-    border-radius: 20px;
     font-size: 1.8vw;
-    font-weight: 100;
     padding-top: 0.8vw;
     padding-bottom: 0.8vw;
     margin-top: 1vw;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
   }
 
   .mockup {
@@ -611,8 +604,6 @@ body::-webkit-scrollbar {
   }
 
   #kontaktInfo a {
-    display: flex;
-    align-items: center;
     padding-top: 5vw;
   }
 
@@ -625,35 +616,19 @@ body::-webkit-scrollbar {
 
 /* Små skærme (telefoner) */
 @media (max-width: 767px) {
-  /* ... */
   /*FONT REGLER*/
-  h1,
-  h2,
-  h3,
-  a,
-  p {
-    color: #676417;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 100;
-  }
-
   h1 {
-    text-transform: uppercase;
     font-size: 15vw;
-    padding-bottom: 3vw;
     padding-top: 7.7vw;
     text-align: center;
   }
 
   h2 {
-    text-transform: uppercase;
     font-size: 5vw;
   }
 
   h3 {
-    text-transform: uppercase;
     font-size: 3vw;
-    padding-top: 0.9vw;
   }
 
   p {
@@ -662,20 +637,12 @@ body::-webkit-scrollbar {
   }
 
   a {
-    text-transform: uppercase;
     font-size: 5vw;
-    text-decoration: none;
-    cursor: pointer;
   }
 
   /*NAVIGATION*/
   nav {
-    display: flex;
-    background-color: rgb(244, 253, 193, 0.7);
-    position: fixed;
-    width: 100vw;
     height: 15vw;
-    z-index: 5;
   }
 
   #logo {
@@ -701,9 +668,6 @@ body::-webkit-scrollbar {
 
   #menupunkter {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-right: 5vw;
     margin-left: 5vw;
   }
@@ -715,11 +679,7 @@ body::-webkit-scrollbar {
   /*FORSIDE*/
   #forside {
     background-image: url("images/baggrundMobil.svg");
-    background-size: 100vw;
-    background-repeat: no-repeat;
     height: 180vw;
-    overflow: hidden;
-
     position: sticky;
     top: 0;
     left: 0;
@@ -736,23 +696,12 @@ body::-webkit-scrollbar {
 
   #kontaktKnap {
     margin-left: 30vw;
-    text-transform: uppercase;
-    color: #f4fdc1;
-    background-color: #999750;
-    border: none;
-    border-radius: 20px;
     font-size: 5vw;
-    font-weight: 100;
     padding: 1.9vw;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
   }
 
   #forsidegif {
     width: 190%;
-    position: absolute;
-    top: 0;
-    left: 0;
     margin-left: -39.2vw;
     margin-top: 73vw;
   }
@@ -761,8 +710,6 @@ body::-webkit-scrollbar {
   #omMig {
     position: relative;
     height: 400vh;
-    z-index: 1;
-    background-color: #f4fdc1;
   }
 
   #omMigImg {
@@ -780,8 +727,6 @@ body::-webkit-scrollbar {
   /*UDTALELSE*/
 
   .tekstIMidten {
-    display: flex;
-    justify-content: center;
     padding-bottom: 15vw;
     padding-top: 24vw;
   }
@@ -799,7 +744,6 @@ body::-webkit-scrollbar {
   }
 
   .fedTekst {
-    font-weight: 900;
     padding-top: 7vw;
   }
 
@@ -814,7 +758,6 @@ body::-webkit-scrollbar {
   }
 
   .citatLeft {
-    padding-bottom: 1.5vw;
     display: flex;
   }
 
@@ -826,8 +769,6 @@ body::-webkit-scrollbar {
   /*TOOLS*/
   .tools,
   h3 {
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 5vw;
   }
@@ -846,15 +787,12 @@ body::-webkit-scrollbar {
 
   #kfm,
   #nippon {
-    display: flex;
     flex-direction: column-reverse;
-    padding-bottom: 11.6vw;
     margin-left: 5vw;
     margin-right: 5vw;
   }
 
   #urtekram {
-    display: flex;
     flex-direction: column-reverse;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -866,7 +804,6 @@ body::-webkit-scrollbar {
   }
 
   .projektBeskrivelse h2 {
-    padding-bottom: 2vw;
     padding-top: 7vw;
   }
 
@@ -877,23 +814,15 @@ body::-webkit-scrollbar {
   .pil {
     width: 3.5%;
     padding-left: 0.8vw;
-    color: #676417;
   }
 
   .seMereKnap {
     width: 37vw;
-    text-transform: uppercase;
-    color: #f4fdc1;
-    background-color: #999750;
-    border: none;
     border-radius: 20px;
     font-size: 5.5vw;
-    font-weight: 100;
     padding-top: 1.4vw;
     padding-bottom: 1.4vw;
     margin-top: 1vw;
-    font-family: "Montserrat", sans-serif;
-    cursor: pointer;
   }
 
   .mockup {
@@ -930,8 +859,6 @@ body::-webkit-scrollbar {
   }
 
   #kontaktInfo a {
-    display: flex;
-    align-items: center;
     padding-top: 5vw;
   }
 

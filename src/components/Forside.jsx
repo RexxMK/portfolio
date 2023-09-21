@@ -1,4 +1,3 @@
-import baggrund from "../images/baggrund.svg";
 import forsidegif from "../images/forsideani.gif";
 
 export default function Forside() {

@@ -1,4 +1,4 @@
-import forsidegif from "../images/forsideani.gif";
+import forsidegif from "../images/kodesky.gif";
 
 export default function Forside() {
   const scrollToSection = (sectionId) => {

@@ -62,11 +62,11 @@ export default function Posts() {
       {/*UDTALELSE */}
       <div>
         <div className="tekstIMidten">
-          <h2>udtalelse fra medstuderende</h2>
+          <h2>udtalelser fra medstuderende</h2>
         </div>
-        <div id="udtalelse">
+        <div className="udtalelse">
           {" "}
-          <img id="stregLeft" src={streg} alt="Streg" />
+          <img className="stregLeft" src={streg} alt="Streg" />
           <div>
             <img className="citatLeft" src={citatleft} alt="Citationstegn" />
             <p>
@@ -80,9 +80,9 @@ export default function Posts() {
               en gevinst for enhver, der har hende på sit team. - Og så er hun
               utrolig sjov og energisk at være i selskab med.
             </p>
-            <br />
-            <p>
-              - Katrine Brun Lunding{" "}
+
+            <p className="fedTekst">
+              - Katrine Brun Lunding (Multimediedesignstuderende på EAA){" "}
               <span>
                 <img
                   className="citatRight"
@@ -92,7 +92,60 @@ export default function Posts() {
               </span>
             </p>
           </div>
-          <img id="stregRight" src={streg} alt="Streg" />
+          <img className="stregRight" src={streg} alt="Streg" />
+        </div>
+
+        <div className="udtalelse">
+          {" "}
+          <img className="stregLeft" src={streg} alt="Streg" />
+          <div>
+            <img className="citatLeft" src={citatleft} alt="Citationstegn" />
+            <p>
+              Jeg har haft den store fornøjelse af at arbejde sammen med Rikke
+              på flere projekter på multimedieuddannelsen på Erhvervsakademi
+              Aarhus, og jeg vil varmt anbefale hende. Rikke er yderst
+              arbejdsom, kreativ og dedikeret til sit arbejde. Hun formår altid
+              at levere projekter til tiden og på professionel vis. Hendes
+              kreative evner og øje for detaljer er virkelig enestående, og jeg
+              er altid imponeret over det endelige resultat af hendes arbejde.
+            </p>
+            <p>
+              Rikke har en imponerende flair for de tekniske aspekter af
+              multimediedesign. Hun er altid opdateret på de nyeste trends og
+              teknologier inden for faget, og hendes ekspertise går langt ud
+              over det forventede. Hendes indsigt i programmering, animationer,
+              video og grafik er bemærkelsesværdig, og hun formår altid at
+              udnytte disse værktøjer til at skabe imponerende resultater.
+            </p>
+            <p>
+              Sidst, men bestemt ikke mindst, er Rikke en stor kilde til daglige
+              gode grin. Hendes positive energi og sans for humor gør, at
+              arbejdsmiljøet altid er sjovt og behageligt. Hun formår at skabe
+              en rar stemning, hvor alle føler sig velkomne og inspirerede.
+              Samlet set er Rikke en dygtig multimediedesigner, der er
+              passioneret for sit arbejde. Hendes tekniske færdigheder, kreative
+              tankegang og evne til at skære ind til benet er uvurderlige
+              ressourcer.
+            </p>
+            <p>
+              Jeg kan varmt anbefale Rikke til enhver virksomhed eller projekt,
+              der ønsker en talentfuld og dedikeret multimediedesigner, der også
+              kan forvandle arbejdsdagen til en fornøjelse.
+            </p>
+
+            <p className="fedTekst">
+              - Marie-Louise Spjeldnaes Johansen (Multimediedesignstuderende på
+              EAA og tidligere folkeskolelærer){" "}
+              <span>
+                <img
+                  className="citatRight"
+                  src={citatright}
+                  alt="Citationstegn"
+                />
+              </span>
+            </p>
+          </div>
+          <img className="stregRight" src={streg} alt="Streg" />
         </div>
       </div>
 

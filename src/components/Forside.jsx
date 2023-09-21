@@ -17,12 +17,13 @@ export default function Forside() {
       <a onClick={() => scrollToSection("kontakt")}>
         <button id="kontaktKnap">kontakt mig</button>
       </a>
-
-      <img
-        id="forsidegif"
-        src={forsidegif}
-        alt="Illustration af mig selv bag skrivebord"
-      />
+      <div id="gif">
+        <img
+          id="forsidegif"
+          src={forsidegif}
+          alt="Illustration af mig selv bag skrivebord"
+        />
+      </div>
     </section>
   );
 }

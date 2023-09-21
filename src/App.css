@@ -463,6 +463,10 @@ h3 {
     padding: 0.8%;
   }
 
+  #gif {
+    width: 100vw;
+  }
+
   #forsidegif {
     width: 85%;
     margin-left: 32.1vw;
@@ -643,6 +647,7 @@ h3 {
   /*NAVIGATION*/
   nav {
     height: 15vw;
+    position: fixed;
   }
 
   #logo {
@@ -654,8 +659,8 @@ h3 {
     width: 25%;
     position: fixed;
     bottom: 0;
-    left: 0;
-    margin-left: 74vw;
+    right: 0;
+    margin-right: 2vw;
     z-index: 5;
   }
 
@@ -701,8 +706,12 @@ h3 {
     padding: 1.9vw;
   }
 
+  #gif {
+    width: 100vw;
+  }
+
   #forsidegif {
-    width: 190%;
+    width: 190vw;
     margin-left: -39.2vw;
     margin-top: 73vw;
   }

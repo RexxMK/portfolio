@@ -24,6 +24,10 @@ import { Link } from "react-router-dom";
 import email from "../images/email.svg";
 import linkedin from "../images/linkedin.svg";
 import facebook from "../images/facebook.svg";
+import vue from "../images/vue.png";
+import nuxt from "../images/nuxt.png";
+import ntsShowcase from "../images/ntsLink.png";
+import aaShowcase from "../images/aaLink.png";
 
 export default function Posts() {
   //Her henter jeg et indlæg fra WordPress
@@ -62,7 +66,7 @@ export default function Posts() {
       {/*UDTALELSE */}
       <div>
         <div className="tekstIMidten">
-          <h2>udtalelser fra medstuderende</h2>
+          <h2>udtalelser fra tidligere medstuderende</h2>
         </div>
         <div className="udtalelse">
           {" "}
@@ -82,7 +86,7 @@ export default function Posts() {
             </p>
 
             <p className="fedTekst">
-              - Katrine Brun Lunding (Multimediedesignstuderende på EAA){" "}
+              - Katrine Brun Lunding (Multimediedesigner){" "}
               <span>
                 <img
                   className="citatRight"
@@ -134,8 +138,8 @@ export default function Posts() {
             </p>
 
             <p className="fedTekst">
-              - Marie-Louise Spjeldnaes Johansen (Multimediedesignstuderende på
-              EAA og tidligere folkeskolelærer){" "}
+              - Marie-Louise Spjeldnaes Johansen (Tidligere
+              multimediedesignstuderende på EAA og folkeskolelærer){" "}
               <span>
                 <img
                   className="citatRight"
@@ -158,11 +162,34 @@ export default function Posts() {
         <div className="tools">
           <div>
             <img
-              src={illustrator}
-              alt="Adobe Illustrator: Icons made by https://www.freepik.com title= Freepik  from https://www.flaticon.com/ title= Flaticon www.flaticon.com"
+              src={vue}
+              alt=" Icons made by https://www.flaticon.com/authors/pocike title= pocike from https://www.flaticon.com/ title= Flaticon www.flaticon.com"
             />
-            <h3>adobe illustrator</h3>
+            <h3>vue</h3>
           </div>
+
+          <div>
+            <img src={nuxt} alt="nuxt logo" />
+            <h3>nuxt</h3>
+          </div>
+
+          <div>
+            <img
+              src={react}
+              alt="REACT: Icons made by https://www.freepik.com title= Freepik  from https://www.flaticon.com/ title= Flaticon www.flaticon.com"
+            />
+            <h3>react</h3>
+          </div>
+          <div>
+            <img
+              src={javascript}
+              alt="JavaScript: Icons made by https://www.flaticon.com/authors/edtim title=edt.im edt.im from https://www.flaticon.com/ title=Flaticon www.flaticon.com"
+            />
+            <h3>javascript</h3>
+          </div>
+        </div>
+
+        <div className="tools">
           <div>
             <img
               src={html}
@@ -184,9 +211,7 @@ export default function Posts() {
             />
             <h3>figma</h3>
           </div>
-        </div>
 
-        <div className="tools">
           <div>
             <img
               src={aftereffects}
@@ -194,19 +219,13 @@ export default function Posts() {
             />
             <h3>adobe after effects</h3>
           </div>
+
           <div>
             <img
-              src={react}
-              alt="REACT: Icons made by https://www.freepik.com title= Freepik  from https://www.flaticon.com/ title= Flaticon www.flaticon.com"
+              src={illustrator}
+              alt="Adobe Illustrator: Icons made by https://www.freepik.com title= Freepik  from https://www.flaticon.com/ title= Flaticon www.flaticon.com"
             />
-            <h3>react</h3>
-          </div>
-          <div>
-            <img
-              src={javascript}
-              alt="JavaScript: Icons made by https://www.flaticon.com/authors/edtim title=edt.im edt.im from https://www.flaticon.com/ title=Flaticon www.flaticon.com"
-            />
-            <h3>javascript</h3>
+            <h3>adobe illustrator</h3>
           </div>
         </div>
       </div>
@@ -214,7 +233,6 @@ export default function Posts() {
       {/*PROJEKTER*/}
       <section id="projekter">
         <h1>projekter</h1>
-
         {/*KRISTIAN F. MØLLER*/}
         <div id="kfm">
           <div className="projektBeskrivelse">
@@ -252,8 +270,106 @@ export default function Posts() {
           </div>
         </div>
 
-        {/*NIPPON*/}
+        {/* LIMBO SHOWCASE */}
         <div id="nippon">
+          <div className="projektBeskrivelse">
+            <h2>nippon</h2>
+            <p>
+              I starten af 2. semester fik vi en fiktiv case, hvor vi i grupper
+              skulle lave et website for et japanskinspireret måltidskassefirma
+              kaldet Nippon. Her skulle man bl.a. kunne sammensætte sin egen
+              måltidskasse efter smag, antal personer og antal dage.{" "}
+            </p>
+            <p>Har du lyst til at se mere?</p>{" "}
+            <p>
+              Så klik her
+              <img className="pil" src={pil} alt="Pil nedad" />
+            </p>
+            <Link to="https://rikkekodahl.dk/ShowcaseTemplate/NotToScale/">
+              {" "}
+              <button className="seMereKnap">se mere</button>
+            </Link>
+          </div>
+          <div className="mockup">
+            <Link to="https://rikkekodahl.dk/ShowcaseTemplate/NotToScale/">
+              <img
+                className="mockupLap"
+                src={ntsShowcase}
+                alt="Mockup af mit måltidskasseprojekt - Laptop"
+              />
+            </Link>
+          </div>
+        </div>
+
+        <div id="urtekram">
+          <div className="projektBeskrivelse">
+            <h2>nippon</h2>
+            <p>
+              I starten af 2. semester fik vi en fiktiv case, hvor vi i grupper
+              skulle lave et website for et japanskinspireret måltidskassefirma
+              kaldet Nippon. Her skulle man bl.a. kunne sammensætte sin egen
+              måltidskasse efter smag, antal personer og antal dage.{" "}
+            </p>
+            <p>Har du lyst til at se mere?</p>{" "}
+            <p>
+              Så klik her
+              <img className="pil" src={pil} alt="Pil nedad" />
+            </p>
+            <Link to="https://rikkekodahl.dk/ShowcaseTemplate/AfterAugust/">
+              {" "}
+              <button className="seMereKnap">se mere</button>
+            </Link>
+          </div>
+          <div className="mockup">
+            <Link to="https://rikkekodahl.dk/ShowcaseTemplate/AfterAugust/">
+              <img
+                className="mockupLap"
+                src={aaShowcase}
+                alt="Mockup af mit måltidskasseprojekt - Laptop"
+              />
+            </Link>
+          </div>
+        </div>
+
+        {/*KRISTIAN F. MØLLER*/}
+        {/* <div id="kfm">
+          <div className="projektBeskrivelse">
+            <h2>kristian f. møller</h2>
+            <p>
+              Min gruppe og jeg arbejdede med boghandlen Kristian F. Møller ifm.
+              eksamensprojektet på 2. semester. Her lavede vi et redesign af
+              Kristian F. Møllers website, der havde til formål at udstråle den
+              visuelle identitet, man ser i den fysiske butik.{" "}
+            </p>
+            <p>Har du lyst til at se mere?</p>{" "}
+            <p>
+              Så klik her
+              <img className="pil" src={pil} alt="Pil nedad" />
+            </p>
+            <Link to="https://xd.adobe.com/view/2afcd91f-e249-4340-ac49-b7ba253c1748-7faf/?fullscreen&hints=off">
+              {" "}
+              <button className="seMereKnap">se mere</button>
+            </Link>
+          </div>
+
+          <div className="mockup">
+            <Link to="https://xd.adobe.com/view/2afcd91f-e249-4340-ac49-b7ba253c1748-7faf/?fullscreen&hints=off">
+              <img
+                className="mockupLap"
+                src={kfmlap}
+                alt="Mockup af mit eksamensprojekt fra 2. semester - Laptop"
+              />
+            </Link>
+            <img
+              className="mockupMob"
+              src={kfmmob}
+              alt="Mockup af mit eksamensprojekt fra 2. semester - Mobil"
+            />
+          </div>
+        </div> */}
+
+        {/*NIPPON*/}
+        {/* <div id="nippon">
           <div className="projektBeskrivelse">
             <h2>nippon</h2>
             <p>
@@ -286,10 +402,10 @@ export default function Posts() {
               alt="Mockup af mit måltidskasseprojekt - Mobil"
             />
           </div>
-        </div>
+        </div> */}
 
         {/*URTEKRAM*/}
-        <div id="urtekram">
+        {/* <div id="urtekram">
           <div className="projektBeskrivelse">
             <h2>urtekram</h2>
             <p>
@@ -324,7 +440,7 @@ export default function Posts() {
               />
             </Link>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/*KONTAKT*/}

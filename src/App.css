@@ -780,6 +780,12 @@ h3 {
     padding-bottom: 28vw;
   }
 
+  #showcase {
+    flex-direction: column-reverse;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
   #kfm,
   #nippon {
     flex-direction: column-reverse;
